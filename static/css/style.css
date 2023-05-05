@@ -1,0 +1,85 @@
+html,
+body {
+    width: 100vw;
+    min-height: 100vh;
+    /* background-color: #adadfb; */
+    background-image: url(../images/bg.jpeg);
+    background-size: cover;
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    line-height: 2;
+}
+
+#frosted {
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    margin-right: 100px;
+    color: white !important;
+}
+
+
+.navbar-nav {
+    position: absolute;
+    right: 50%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#timer-circle {
+    animation-name: rotate;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 40vw;
+    height: 40vw;
+    border: 5px dashed blueviolet;
+    border-radius: 100%;
+    
+}
+
+
+h1 {
+    letter-spacing: 25px;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+
+.timer h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.text {
+    padding: 5%;
+}
+
+#demo:hover {
+    cursor: pointer;
+}
+
+
+#skip-session:hover {
+    cursor: pointer;
+}
